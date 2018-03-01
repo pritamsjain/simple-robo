@@ -26,7 +26,6 @@ func MoveVehicle(x, y, z int, facing, commands string) (xnew,ynew,znew int){
 			if nextDirection<0{
 				nextDirection= 4+nextDirection
 			}
-			fmt.Println(curd,curd-1,(curd-1)%4,nextDirection)
 			curFacingDir = dir[nextDirection]
 		case 'F':
 			if curFacingDir == "E" {
