@@ -1,6 +1,7 @@
 package cmd
 
 import "fmt"
+
 //directions map to decide current direction
 var directions = map[string]int{
 	"N": 0,
@@ -47,5 +48,6 @@ func MoveVehicle(x, y, z int, facing, commands string) (xnew,ynew,znew int){
 			znew = znew - 10
 		}
 	}
+	fmt.Println("finally robo is facing to ",curFacingDir)
 	return
 }

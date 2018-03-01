@@ -12,7 +12,7 @@ func main() {
 	var x, y, z int
 	fmt.Println("Enter current position of robo comma separated like 2,3,1 ")
 	fmt.Scanln(&xyz)
-	fmt.Println(xyz)
+	//fmt.Println(xyz)
 	coordinates := strings.Split(xyz, ",")
 	var coordinatesint []int
 	for i, a := range coordinates {
@@ -35,12 +35,12 @@ func main() {
 
 	fmt.Println("Enter commands for robo eg 'ground RFFFFLLFFFFRFFFF'")
 	fmt.Scanln(&input,&strcmd)
-	fmt.Println(input,strcmd)
+	//fmt.Println(input,strcmd)
 
 	fmt.Println("Enter robo facing direction eg. E or W or N or S")
 	fmt.Scanln(&facingDirection)
-	fmt.Println(facingDirection)
+	//fmt.Println(facingDirection)
 
 	newx,newy,newz := cmd.MoveVehicle(x, y, z, facingDirection, strcmd)
-	fmt.Println(newx,newy,newz)
+	fmt.Println("final location of robo ",newx,newy,newz)
 }
